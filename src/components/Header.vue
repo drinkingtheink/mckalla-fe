@@ -9,7 +9,10 @@
     />
 
     <section class="anthem-nav-links">
-      <!-- nav links -->
+      <router-link to="/">Home</router-link>
+      <router-link to="/membership">Membership</router-link>
+      <router-link to="/about">About</router-link>
+      <router-link to="/media">Media</router-link>
     </section>
 
     <section class="anthem-lang-login">
@@ -43,5 +46,10 @@ export default {
 
 .anthem-logo {
   max-height: 50px;
+}
+
+.anthem-nav-links a {
+  color: white;
+  margin: 0 10px;
 }
 </style>

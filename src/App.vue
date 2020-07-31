@@ -1,35 +1,31 @@
 <template>
   <div id="app">
     <Header />
-    <MainContent />
+    <router-view/>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue';
-import MainContent from './components/MainContent.vue';
+import Header from './components/Header';
 
 export default {
   name: 'App',
   components: {
-    Header,
-    MainContent
+    'Header': Header
   }
 };
 </script>
 
 <style lang="scss">
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-  }
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
 
-  #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-  }
+.anthem-page {
+  padding-top: 4em;
+}
 </style>
